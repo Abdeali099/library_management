@@ -8,11 +8,12 @@
  "field_order": [
   "section_break_xoha",
   "article_name",
-  "author",
   "isbn",
+  "author",
+  "publisher",
   "column_break_xmgr",
   "image",
-  "publisher",
+  "quantity",
   "status",
   "section_break_mmyr",
   "description"
@@ -69,12 +70,18 @@
   {
    "fieldname": "section_break_mmyr",
    "fieldtype": "Section Break"
+  },
+  {
+   "default": "5",
+   "fieldname": "quantity",
+   "fieldtype": "Int",
+   "label": "Quantity"
   }
  ],
  "image_field": "image",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-01-09 18:40:31.911236",
+ "modified": "2024-01-11 12:13:29.045338",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Article",
