@@ -31,6 +31,6 @@ class LibraryMembership(Document):
         loan_period = frappe.db.get_single_value("Library Setting","loan_period")
         self.to_date = utils.add_days(self.from_date,loan_period or 30)
         
-    # FIXME this was not worked 
-    def after_submit(self):
+
+    def on_submit(self):
         frappe.msgprint(msg="Successfully Membership created.",title="Success",indicator="green")
